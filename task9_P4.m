@@ -19,6 +19,9 @@ Bro = [ B2 - Lro*B1 , ...
 Cro = eye(2);                                           
 Dro = [ zeros(2,1) , Lro ];                             
 
+disp(X0)
+disp(Lro)
+X0(1) = 0.05;
+z0 = -Lro*X0(1:2);
 
-
-z0 = -Lro * X0;
+disp(z0)
